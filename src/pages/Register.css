@@ -1,0 +1,17 @@
+/* Register.css */
+.container {
+    max-width: 600px;
+  }
+  
+  h2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  button {
+    font-size: 1.2rem;
+  }
+#fr{
+    border-radius: 10px;
+}  

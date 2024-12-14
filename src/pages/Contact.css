@@ -1,0 +1,26 @@
+/* ContactPage.css */
+.hero1-section {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('/src/pages/ReactImg/mountain\ view.jpeg') center/cover;
+  height: 550px;
+}
+
+.contact-form-section {
+  background-color: #f8f9fa;
+}
+
+.contact-form-section .form-control {
+  border-radius: 5px;
+}
+
+.contact-form-section .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.contact-form-section .btn-primary:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,19 @@
+.hero-section {
+    background: linear-gradient(to right, #6c63ff, #3b5998);
+    padding: 60px 0;
+  }
+  
+  .blog-cards-section .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blog-cards-section .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  

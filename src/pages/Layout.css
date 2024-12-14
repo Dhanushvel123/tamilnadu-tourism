@@ -1,0 +1,21 @@
+li{
+    display: inline;
+        list-style-type: none;
+        margin-left: 17%;
+        padding: 3.5px;
+        text-decoration: none;
+        border: 2px solid blue;
+        border-radius: 5px;
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color:black;
+        font-size: 23px;
+    }
+    
+    h1{
+        text-align: center;
+        margin-top: 3%;
+    }
+    

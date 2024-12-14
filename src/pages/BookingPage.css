@@ -1,0 +1,33 @@
+Booking Page Styles
+.booking-page .hero-section {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/src/pages/ReactImg/booking\ logo.jpg") center/cover no-repeat;
+  height: 600px;
+  color: white;
+}
+
+.booking-form-section {
+  background-color: #f9f9f9;
+}
+
+.booking-form-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.booking-form-section form {
+  border-radius: 10px;
+}
+
+.booking-form-section .form-check {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+  .booking-page .hero-section {
+    height: 40vh;
+  }
+}
