@@ -9,18 +9,106 @@ import a4 from './ReactImg/resort room.jpg';
 import a5 from './ReactImg/resort campfire.jpg';
 import a6 from './ReactImg/resort hill station.jpg';
 
+
+const Footer = () => {
+  return (
+    <footer className="bg-dark text-light pt-4 w-100 " style={{ minHeight: '400px' }}>
+      <div className="container-fluid">
+        <div className="row">
+          {/* About Section */}
+          <div className="col-md-4 mb-3">
+            <h5 className="text-warning">About Tamil Nadu Tourism</h5>
+            <p style={{whiteSpace:'pre-line'}}>
+              Experience the rich culture, vibrant festivals, 
+              and breathtaking attractions that 
+              Tamil Nadu has to offer. Plan your visit today!
+            </p>
+          </div>
+
+          {/* Quick Links Section */}
+          <div className="col-md-4 mb-3" >
+            <h5 className="text-warning">Quick Links</h5>
+            <div>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/"
+              >
+                Home
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/packages"
+              >
+                Packages
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/modernResort"
+              >
+                Resort
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/contact"
+              >
+                Contact
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/bookingpage"
+              >
+                Booking
+              </a>
+            </div>
+          </div>
+
+          {/* Contact Information Section */}
+          <div className="col-md-4 mb-3">
+            <h5 className="text-warning">Contact Us</h5>
+            <p>
+              <i className="bi bi-geo-alt-fill"></i> Chennai, Tamil Nadu, India
+            </p>
+            <p>
+              <i className="bi bi-telephone-fill"></i> +91 9876543210
+            </p>
+            <p>
+              <i className="bi bi-envelope-fill"></i> info@tamilnadutourism.com
+            </p>
+          </div>
+        </div>
+
+        {/* Footer Bottom Section */}
+        <div className="row text-center pt-3 border-top border-secondary">
+          <div className="col-12">
+            <p className="mb-0">
+              &copy; 2024 Tamil Nadu Tourism. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
 const ModernResort = () => {
   return (
     <div className="modern-resort">
       {/* Hero Section */}
-      <div className="hero-section d-flex align-items-center justify-content-center text-center text-light">
-        <div className="container">
+      <div className="hero1-section d-flex align-items-center justify-content-center text-center text-light">
+        <div className="container mt-5">
           <h1 className="display-3 fw-bold">Discover Tamil Nadu Resorts</h1>
           <p className="lead">
             Unwind, Explore, and Savor at our luxurious Tamil Nadu resorts.
           </p>
           <a href="#packages" className="btn btn-outline-light btn-lg mt-3">
-            Discover More <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#FFFFFF"><path d="M792-120.67 532.67-380q-30 25.33-69.64 39.67Q423.39-326 378.67-326q-108.44 0-183.56-75.17Q120-476.33 120-583.33t75.17-182.17q75.16-75.17 182.5-75.17 107.33 0 182.16 75.17 74.84 75.17 74.84 182.27 0 43.23-14 82.9-14 39.66-40.67 73l260 258.66-48 48Zm-414-272q79.17 0 134.58-55.83Q568-504.33 568-583.33q0-79-55.42-134.84Q457.17-774 378-774q-79.72 0-135.53 55.83-55.8 55.84-55.8 134.84t55.8 134.83q55.81 55.83 135.53 55.83Z"/></svg>
+            Discover More <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+</svg>
           </a>
         </div>
       </div>
@@ -222,6 +310,7 @@ const ModernResort = () => {
           </a>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 };

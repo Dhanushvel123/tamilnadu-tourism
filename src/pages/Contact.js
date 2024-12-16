@@ -2,6 +2,92 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Contact.css";
 
+
+const Footer = () => {
+  return (
+    <footer className="bg-dark text-light pt-4 w-100 " style={{ minHeight: '400px' }}>
+      <div className="container-fluid">
+        <div className="row">
+          {/* About Section */}
+          <div className="col-md-4 mb-3">
+            <h5 className="text-warning">About Tamil Nadu Tourism</h5>
+            <p style={{whiteSpace:'pre-line'}}>
+              Experience the rich culture, vibrant festivals, 
+              and breathtaking attractions that 
+              Tamil Nadu has to offer. Plan your visit today!
+            </p>
+          </div>
+
+          {/* Quick Links Section */}
+          <div className="col-md-4 mb-3" >
+            <h5 className="text-warning">Quick Links</h5>
+            <div>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/"
+              >
+                Home
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/packages"
+              >
+                Packages
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/modernResort"
+              >
+                Resort
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/contact"
+              >
+                Contact
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/bookingpage"
+              >
+                Booking
+              </a>
+            </div>
+          </div>
+
+          {/* Contact Information Section */}
+          <div className="col-md-4 mb-3">
+            <h5 className="text-warning">Contact Us</h5>
+            <p>
+              <i className="bi bi-geo-alt-fill"></i> Chennai, Tamil Nadu, India
+            </p>
+            <p>
+              <i className="bi bi-telephone-fill"></i> +91 9876543210
+            </p>
+            <p>
+              <i className="bi bi-envelope-fill"></i> info@tamilnadutourism.com
+            </p>
+          </div>
+        </div>
+
+        {/* Footer Bottom Section */}
+        <div className="row text-center pt-3 border-top border-secondary">
+          <div className="col-12">
+            <p className="mb-0">
+              &copy; 2024 Tamil Nadu Tourism. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -28,7 +114,7 @@ const Contact = () => {
   return (
     <div className="contact-page">
       {/* Hero Section */}
-      <div className="hero1-section text-center text-light d-flex align-items-center justify-content-center">
+      <div className="hero2-section text-center text-light d-flex align-items-center justify-content-center">
         <div className="container-fluid">
           <h1 className="display-4 fw-bold">Contact Tamil Nadu Tourism</h1>
           <p className="lead">
@@ -120,6 +206,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

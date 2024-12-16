@@ -55,7 +55,7 @@ const Blogs = () => {
       link: "#attractions",
     },
     {
-      title: "Things to Do",
+      title: "Activities to Explore",
       description:
         "Experience the thrill of adventure with activities like surfing, boating, hiking, and outdoor games in Tamil Nadu.",
       image: b5,
@@ -107,32 +107,62 @@ const Blogs = () => {
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light pt-4  w-100" style={{height:'400px'}}> 
+    <footer className="bg-dark text-light pt-4 w-100" style={{ minHeight: '400px' }}>
       <div className="container-fluid">
         <div className="row">
           {/* About Section */}
           <div className="col-md-4 mb-3">
             <h5 className="text-warning">About Tamil Nadu Tourism</h5>
-            <p>
-              Experience the rich culture, vibrant festivals, and breathtaking attractions that Tamil Nadu has to offer. Plan your visit today!
+            <p style={{whiteSpace:'pre-line'}}>
+              Experience the rich culture, vibrant festivals, 
+              and breathtaking attractions that 
+              Tamil Nadu has to offer. Plan your visit today!
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div className="col-md-4 mb-3 " style={{border:'2px solid white'}}>
+          {/* Quick Links Section */}
+          <div className="col-md-4 mb-3" >
             <h5 className="text-warning">Quick Links</h5>
-            <div className=' border'>
-              <ul style={{listStyleType:'none',padding:'5px'}}>
-         <li><a className='text-white fs-5' style={{textDecoration:'none'}} href='/'>Home </a></li>
-         <li> <a className='text-white fs-5' style={{textDecoration:'none'}} href='/packages'>Packages</a></li>
-       <li><a className='text-white fs-5' style={{textDecoration:'none'}} href='/modernResort'>Resort</a></li>
-         <li> <a className='text-white fs-5' style={{textDecoration:'none'}} href='/contact'>Contact</a></li>
-        <li><a className='text-white fs-5' style={{textDecoration:'none'}} href='/bookingpage'>Booking</a></li>
-        </ul>
-          </div>
+            <div>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/"
+              >
+                Home
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/packages"
+              >
+                Packages
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/modernResort"
+              >
+                Resort
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/contact"
+              >
+                Contact
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/bookingpage"
+              >
+                Booking
+              </a>
+            </div>
           </div>
 
-          {/* Contact Information */}
+          {/* Contact Information Section */}
           <div className="col-md-4 mb-3">
             <h5 className="text-warning">Contact Us</h5>
             <p>
@@ -147,7 +177,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Footer Bottom */}
+        {/* Footer Bottom Section */}
         <div className="row text-center pt-3 border-top border-secondary">
           <div className="col-12">
             <p className="mb-0">
@@ -159,10 +189,11 @@ const Footer = () => {
     </footer>
   );
 };
+
 const Home =()=>{
     return(
         <div>
-    <h1 className="text-primary">This is Home page </h1>
+    <h1 className="text-primary"> Home page </h1>
     
     <Carousel data-bs-theme="dark">
       <Carousel.Item>
@@ -200,7 +231,7 @@ const Home =()=>{
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="outline-primary" >Go somewhere</Button>
+        <Button variant="outline-primary" ><a className='fs-5 text-decoration-none' style={{color:'black'}} href='/packages' >More Details</a></Button>
       </Card.Body>
     </Card>
     </div>
@@ -214,7 +245,7 @@ const Home =()=>{
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="outline-primary">Go somewhere</Button>
+        <Button variant="outline-primary" ><a className='fs-5 text-decoration-none' style={{color:'black'}} href='/packages' >More Details</a></Button>
       </Card.Body>
     </Card>
     </div>
@@ -228,7 +259,7 @@ const Home =()=>{
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="outline-primary">Go somewhere</Button>
+        <Button variant="outline-primary" ><a className='fs-5 text-decoration-none' style={{color:'black'}} href='/packages' >More Details</a></Button>
       </Card.Body>
     </Card>
     </div>
@@ -242,7 +273,7 @@ const Home =()=>{
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="outline-primary">Go somewhere</Button>
+        <Button variant="outline-primary" ><a className='fs-5 text-decoration-none' style={{color:'black'}} href='/packages' >More Details</a></Button>
       </Card.Body>
     </Card>
     </div>
@@ -256,8 +287,7 @@ const Home =()=>{
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="outline-primary">Go somewhere</Button>
-      </Card.Body>
+        <Button variant="outline-primary" ><a className='fs-5 text-decoration-none' style={{color:'black'}} href='/packages' >More Details</a></Button>      </Card.Body>
     </Card>
     </div>
 
@@ -270,8 +300,7 @@ const Home =()=>{
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="outline-primary">Go somewhere</Button>
-      </Card.Body>
+        <Button variant="outline-primary" ><a className='fs-5 text-decoration-none' style={{color:'black'}} href='/packages' >More Details</a></Button>      </Card.Body>
     </Card>
     </div>
 
@@ -284,8 +313,7 @@ const Home =()=>{
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="outline-primary">Go somewhere</Button>
-      </Card.Body>
+        <Button variant="outline-primary" ><a className='fs-5 text-decoration-none' style={{color:'black'}} href='/packages' >More Details</a></Button>      </Card.Body>
     </Card>
     </div>
 
@@ -298,8 +326,7 @@ const Home =()=>{
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="outline-primary">Go somewhere</Button>
-      </Card.Body>
+        <Button variant="outline-primary" ><a className='fs-5 text-decoration-none' style={{color:'black'}} href='/packages' >More Details</a></Button>      </Card.Body>
     </Card>
     </div>
 
@@ -312,8 +339,7 @@ const Home =()=>{
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="outline-primary">Go somewhere</Button>
-      </Card.Body>
+        <Button variant="outline-primary" ><a className='fs-5 text-decoration-none' style={{color:'black'}} href='/packages' >More Details</a></Button>      </Card.Body>
     </Card>
     
     </div>

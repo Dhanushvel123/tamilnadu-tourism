@@ -14,6 +14,92 @@ import d10 from './ReactImg/vedanthangal.jpg';
 import d11 from './ReactImg/adiyogi siva.jpg';
 import d12 from './ReactImg/rameswaram.jpg';
 
+
+const Footer = () => {
+  return (
+    <footer className="bg-dark text-light pt-4 w-100 mt-5" style={{ minHeight: '400px' }}>
+      <div className="container-fluid">
+        <div className="row">
+          {/* About Section */}
+          <div className="col-md-4 mb-3">
+            <h5 className="text-warning">About Tamil Nadu Tourism</h5>
+            <p style={{whiteSpace:'pre-line'}}>
+              Experience the rich culture, vibrant festivals, 
+              and breathtaking attractions that 
+              Tamil Nadu has to offer. Plan your visit today!
+            </p>
+          </div>
+
+          {/* Quick Links Section */}
+          <div className="col-md-4 mb-3" >
+            <h5 className="text-warning">Quick Links</h5>
+            <div>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/"
+              >
+                Home
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/packages"
+              >
+                Packages
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/modernResort"
+              >
+                Resort
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/contact"
+              >
+                Contact
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/bookingpage"
+              >
+                Booking
+              </a>
+            </div>
+          </div>
+
+          {/* Contact Information Section */}
+          <div className="col-md-4 mb-3">
+            <h5 className="text-warning">Contact Us</h5>
+            <p>
+              <i className="bi bi-geo-alt-fill"></i> Chennai, Tamil Nadu, India
+            </p>
+            <p>
+              <i className="bi bi-telephone-fill"></i> +91 9876543210
+            </p>
+            <p>
+              <i className="bi bi-envelope-fill"></i> info@tamilnadutourism.com
+            </p>
+          </div>
+        </div>
+
+        {/* Footer Bottom Section */}
+        <div className="row text-center pt-3 border-top border-secondary">
+          <div className="col-12">
+            <p className="mb-0">
+              &copy; 2024 Tamil Nadu Tourism. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
 // Packages data
 const packages = [
   {
@@ -172,6 +258,7 @@ const Packages = () => {
           </div>
         ))}
       </div>
+      <Footer/>
     </div>
   );
 };

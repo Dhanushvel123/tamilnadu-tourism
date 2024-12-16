@@ -1,5 +1,5 @@
 /* ContactPage.css */
-.hero1-section {
+.hero2-section {
   background: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
@@ -23,4 +23,22 @@
 
 .contact-form-section .btn-primary:hover {
   background-color: #0056b3;
+}
+
+footer a {
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f4d03f; /* Hover color for links */
+}
+
+@media (max-width: 576px) {
+  footer {
+    text-align: center;
+  }
+
+  footer .row > div {
+    margin-bottom: 1rem;
+  }
 }

@@ -1,11 +1,11 @@
 /* Modern Resort Styles */
-.modern-resort .hero-section {
+.modern-resort .hero1-section {
   background: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("/src/pages/ReactImg/resort\ ambience.jpg") center/cover no-repeat;
-  height: 100vh;
+    url("/src/pages/ReactImg/resort\ logo.jpg") center/cover no-repeat;
+  height: 620px;
   color: white;
 }
 
@@ -23,3 +23,20 @@
   color: white;
 }
 
+footer a {
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f4d03f; /* Hover color for links */
+}
+
+@media (max-width: 576px) {
+  footer {
+    text-align: center;
+  }
+
+  footer .row > div {
+    margin-bottom: 1rem;
+  }
+}

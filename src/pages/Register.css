@@ -1,17 +1,29 @@
-/* Register.css */
-.container {
-    max-width: 600px;
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero4-section {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('/src/pages/ReactImg/regbg.jpeg') center/cover;
+  height:580px;
+}
+
+footer a {
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f4d03f; /* Add hover effect for footer links */
+}
+
+@media (max-width: 576px) {
+  footer .row > div {
+    text-align: center;
+    margin-bottom: 1rem;
   }
-  
-  h2 {
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    color: #007bff;
-  }
-  
-  button {
-    font-size: 1.2rem;
-  }
-#fr{
-    border-radius: 10px;
-}  
+}

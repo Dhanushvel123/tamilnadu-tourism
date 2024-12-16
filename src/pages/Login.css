@@ -1,12 +1,12 @@
 /* LoginPage.css */
-.hero-section {
+.hero5-section {
     background: linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
       url('/src/pages/ReactImg/contact\ bg.jpg') center/cover;
     height:580px;
-  }
+  } 
   
   .login-form-section {
     background-color: #f8f9fa;
@@ -25,3 +25,20 @@
     background-color: #0056b3;
   }
   
+  footer a {
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #f4d03f; /* Hover color for links */
+  }
+  
+  @media (max-width: 576px) {
+    footer {
+      text-align: center;
+    }
+  
+    footer .row > div {
+      margin-bottom: 1rem;
+    }
+  }

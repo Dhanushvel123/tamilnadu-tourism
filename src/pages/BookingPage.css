@@ -1,13 +1,30 @@
-Booking Page Styles
+
 .booking-page .hero-section {
   background: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("/src/pages/ReactImg/booking\ logo.jpg") center/cover no-repeat;
+    url('/src/pages/ReactImg/blogo.jpg') center/cover no-repeat;
   height: 600px;
-  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+@media (max-width: 768px) {
+  .booking-page .hero-section {
+    height: 400px; /* Adjust height for smaller screens */
+  }
+
+  .booking-page .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .booking-page .hero-section p {
+    font-size: 1rem;
+  }
+}
+
 
 .booking-form-section {
   background-color: #f9f9f9;
@@ -29,5 +46,24 @@ Booking Page Styles
 @media (max-width: 576px) {
   .booking-page .hero-section {
     height: 40vh;
+  }
+}
+
+
+footer a {
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f4d03f; /* Hover color for links */
+}
+
+@media (max-width: 576px) {
+  footer {
+    text-align: center;
+  }
+
+  footer .row > div {
+    margin-bottom: 1rem;
   }
 }
