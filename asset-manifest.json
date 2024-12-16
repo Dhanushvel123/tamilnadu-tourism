@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/https//Dhanushvel123.github.io/tamilnadu-tourism/static/css/main.eab42d60.css",
-    "main.js": "/https//Dhanushvel123.github.io/tamilnadu-tourism/static/js/main.53d05b68.js",
+    "main.js": "/https//Dhanushvel123.github.io/tamilnadu-tourism/static/js/main.9968e436.js",
     "static/media/madurai.jpg": "/https//Dhanushvel123.github.io/tamilnadu-tourism/static/media/madurai.15b14f5feea8c3a400a2.jpg",
     "static/media/vedanthangal.jpg": "/https//Dhanushvel123.github.io/tamilnadu-tourism/static/media/vedanthangal.0412fa249e79377bddd7.jpg",
     "static/media/guide.jpg": "/https//Dhanushvel123.github.io/tamilnadu-tourism/static/media/guide.d539ec848c21cc536c39.jpg",
@@ -33,10 +33,10 @@
     "static/media/ooty.jpeg": "/https//Dhanushvel123.github.io/tamilnadu-tourism/static/media/ooty.f61db06c2a2a535a7caa.jpeg",
     "index.html": "/https//Dhanushvel123.github.io/tamilnadu-tourism/index.html",
     "main.eab42d60.css.map": "/https//Dhanushvel123.github.io/tamilnadu-tourism/static/css/main.eab42d60.css.map",
-    "main.53d05b68.js.map": "/https//Dhanushvel123.github.io/tamilnadu-tourism/static/js/main.53d05b68.js.map"
+    "main.9968e436.js.map": "/https//Dhanushvel123.github.io/tamilnadu-tourism/static/js/main.9968e436.js.map"
   },
   "entrypoints": [
     "static/css/main.eab42d60.css",
-    "static/js/main.53d05b68.js"
+    "static/js/main.9968e436.js"
   ]
 }
