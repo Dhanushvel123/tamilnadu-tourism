@@ -11,7 +11,7 @@ import BookingPage from './pages/BookingPage';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/tamilnadu-tourism'>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
