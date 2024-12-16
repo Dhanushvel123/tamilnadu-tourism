@@ -3,3 +3,21 @@
 transition: 0.8s ease-in-out;
 transform-style:preserve-3d;
 }
+
+footer {
+    background: #343a40; /* Dark background for contrast */
+    color: #f8f9fa; /* Light text */
+  }
+  
+  footer a {
+    transition: color 0.2s ease-in-out;
+  }
+  
+  footer a:hover {
+    color: #ffc107; /* Highlight link on hover */
+  }
+  
+  footer .border-secondary {
+    border-color: #6c757d !important; /* Adjust the border for a subtle separation */
+  }
+  

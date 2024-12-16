@@ -1,3 +1,4 @@
+import React from 'react';
 import d1 from './ReactImg/logo.jpg';
 import d2 from './ReactImg/mount.jpg';
 import d3 from './ReactImg/bridge.jpg';
@@ -17,42 +18,55 @@ import Card from 'react-bootstrap/Card';
 import './Home.css';
 
 import "./Blogs.css";
+import b1 from './ReactImg/bfood.jpg';
+import b2 from './ReactImg/gallery.jpg';
+import b3 from './ReactImg/traveltips.jpg';
+import b4 from './ReactImg/attract.jpg';
+import b5 from './ReactImg/surf.jpg';
+import b6 from './ReactImg/snow kingdom.jpg';
 const Blogs = () => {
   const blogCategories = [
     {
       title: "Foods",
       description:
         "Explore the rich and diverse culinary delights of Tamil Nadu, from spicy Chettinad dishes to the famous filter coffee.",
-      image: "https://via.placeholder.com/300x200?text=Foods",
+      image: b1,
       link: "#foods",
     },
     {
       title: "Gallery",
       description:
         "A visual journey through the enchanting landscapes, vibrant festivals, and timeless heritage of Tamil Nadu.",
-      image: "https://via.placeholder.com/300x200?text=Gallery",
+      image: b2,
       link: "#gallery",
     },
     {
       title: "Travel Tips",
       description:
         "Get essential travel advice, safety tips, and insider information to make your trip to Tamil Nadu memorable and hassle-free.",
-      image: "https://via.placeholder.com/300x200?text=Travel+Tips",
+      image: b3,
       link: "#traveltips",
     },
     {
       title: "Attractions",
       description:
         "Discover the top attractions in Tamil Nadu, from serene beaches to majestic temples and breathtaking hill stations.",
-      image: "https://via.placeholder.com/300x200?text=Attractions",
+      image:b4,
       link: "#attractions",
     },
     {
       title: "Things to Do",
       description:
         "Experience the thrill of adventure with activities like surfing, boating, hiking, and outdoor games in Tamil Nadu.",
-      image: "https://via.placeholder.com/300x200?text=Things+to+Do",
+      image: b5,
       link: "#thingstodo",
+    },
+    {
+      title: "Snow Kingdom",
+      description:
+        "Experience the thrill of snow with freezing activities and indoor games in Chennai-Tamil Nadu.",
+      image: b6,
+      link: "#snowking",
     },
   ];
 
@@ -70,6 +84,7 @@ const Blogs = () => {
                 <div className="card h-100 shadow-sm">
                   <img
                     src={category.image}
+                    style={{height:'320px'}}
                     className="card-img-top"
                     alt={category.title}
                   />
@@ -87,6 +102,61 @@ const Blogs = () => {
         </div>
       </div>
     </div>
+  );
+};
+
+const Footer = () => {
+  return (
+    <footer className="bg-dark text-light pt-4  w-100" style={{height:'400px'}}> 
+      <div className="container-fluid">
+        <div className="row">
+          {/* About Section */}
+          <div className="col-md-4 mb-3">
+            <h5 className="text-warning">About Tamil Nadu Tourism</h5>
+            <p>
+              Experience the rich culture, vibrant festivals, and breathtaking attractions that Tamil Nadu has to offer. Plan your visit today!
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div className="col-md-4 mb-3 " style={{border:'2px solid white'}}>
+            <h5 className="text-warning">Quick Links</h5>
+            <div className=' border'>
+              <ul style={{listStyleType:'none',padding:'5px'}}>
+         <li><a className='text-white fs-5' style={{textDecoration:'none'}} href='/'>Home </a></li>
+         <li> <a className='text-white fs-5' style={{textDecoration:'none'}} href='/packages'>Packages</a></li>
+       <li><a className='text-white fs-5' style={{textDecoration:'none'}} href='/modernResort'>Resort</a></li>
+         <li> <a className='text-white fs-5' style={{textDecoration:'none'}} href='/contact'>Contact</a></li>
+        <li><a className='text-white fs-5' style={{textDecoration:'none'}} href='/bookingpage'>Booking</a></li>
+        </ul>
+          </div>
+          </div>
+
+          {/* Contact Information */}
+          <div className="col-md-4 mb-3">
+            <h5 className="text-warning">Contact Us</h5>
+            <p>
+              <i className="bi bi-geo-alt-fill"></i> Chennai, Tamil Nadu, India
+            </p>
+            <p>
+              <i className="bi bi-telephone-fill"></i> +91 9876543210
+            </p>
+            <p>
+              <i className="bi bi-envelope-fill"></i> info@tamilnadutourism.com
+            </p>
+          </div>
+        </div>
+
+        {/* Footer Bottom */}
+        <div className="row text-center pt-3 border-top border-secondary">
+          <div className="col-12">
+            <p className="mb-0">
+              &copy; 2024 Tamil Nadu Tourism. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 };
 const Home =()=>{
@@ -249,14 +319,13 @@ const Home =()=>{
     </div>
 
 <Blogs/>
-
+<Footer/>
     </div>
 </div>
     )
 
 }
 export default Home;
-
 
 
 
