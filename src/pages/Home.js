@@ -91,9 +91,9 @@ const Blogs = () => {
                   <div className="card-body">
                     <h5 className="card-title fw-bold">{category.title}</h5>
                     <p className="card-text">{category.description}</p>
-                    <a href={category.link} className="btn btn-primary">
+                    <button type='button' className="btn btn-primary">
                       Read More
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>
