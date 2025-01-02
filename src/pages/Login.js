@@ -167,7 +167,7 @@ const Login = () => {
                   <p className="mb-0">
                     Don't have an account?{" "}
                     <a href="/register" className="text-decoration-none">
-                      Register here
+                      Register
                     </a>
                   </p>
                   <p className="mb-0">
