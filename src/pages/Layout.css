@@ -18,4 +18,39 @@ li{
         text-align: center;
         margin-top: 3%;
     }
-    
+    /* Layout.css */
+
+/* Make navbar background transparent */
+.navbar-custom {
+    background-color: transparent !important;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1030; /* Ensure navbar stays above all elements */
+  }
+  
+  /* Optional: Add a shadow to the navbar */
+  .navbar-custom.fixed-top {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add hover effect for nav links */
+  .navbar-custom .nav-link {
+    color: #000 !important; /* Default text color */
+    font-weight: 500;
+  }
+  
+  .navbar-custom .nav-link:hover {
+    color: #007bff !important; /* Change to your preferred hover color */
+  }
+  
+  /* Make navbar buttons align properly */
+  .navbar-custom .btn {
+    font-size: 0.9rem;
+  }
+  
+  /* Ensure responsiveness for all screen sizes */
+  @media (max-width: 576px) {
+    .navbar-custom {
+      padding: 0.5rem 1rem;
+    }
+  }
+  
