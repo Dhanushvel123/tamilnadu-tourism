@@ -22,7 +22,7 @@ li{
 
 /* Make navbar background transparent */
 .navbar-custom {
-    background-color: transparent !important;
+    backdrop-filter: blur(10px); /* Add blur effect */
     transition: background-color 0.3s ease-in-out;
     z-index: 1030; /* Ensure navbar stays above all elements */
   }
@@ -34,12 +34,12 @@ li{
   
   /* Add hover effect for nav links */
   .navbar-custom .nav-link {
-    color: #000 !important; /* Default text color */
+    color:blue !important; /* Default text color */
     font-weight: 500;
   }
   
   .navbar-custom .nav-link:hover {
-    color: #007bff !important; /* Change to your preferred hover color */
+    color: black !important; /* Change to your preferred hover color */
   }
   
   /* Make navbar buttons align properly */
