@@ -19,11 +19,11 @@ const Layout = () => {
               <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
               <Nav.Link as={Link} to="/bookingpage">BookingPage</Nav.Link>
             </Nav>
-            <button type="button" className="btn btn-outline-primary">
-              <Nav.Link as={Link} to="/register">Register</Nav.Link>
+            <button type="button"  className="btn btn-outline-primary">
+              <Nav.Link as={Link} id="reg" to="/register">Register</Nav.Link>
             </button>
             &nbsp; &nbsp;
-            <button type="button" className="btn btn-outline-success">
+            <button type="button" id="log" className="btn btn-outline-success">
               <Nav.Link as={Link} to="/login">Login</Nav.Link>
             </button>
           </Navbar.Collapse>

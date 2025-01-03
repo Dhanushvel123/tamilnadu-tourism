@@ -54,3 +54,13 @@ li{
     }
   }
   
+  .navbar-custom #reg:hover {
+    .nav-link{
+      color:white;
+    }
+  }
+  .navbar-custom #log:hover {
+    .nav-link{
+      color:white;
+    }
+  }
