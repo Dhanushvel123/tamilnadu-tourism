@@ -9,22 +9,22 @@ const Layout = () => {
       {/* Navbar with fixed position and transparent background */}
       <Navbar bg="transparent" expand="lg" fixed="top" className="navbar-custom">
         <Container>
-          <Navbar.Brand href="/" style={{color:'blue'}}>Tamil Nadu Tourism</Navbar.Brand>
+          <Navbar.Brand href="/" style={{ color: 'blue', fontWeight: 'bold' }}>Tamil Nadu Tourism</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={Link} to="/">Home</Nav.Link>
-              <Nav.Link as={Link} to="/packages">Packages</Nav.Link>
-              <Nav.Link as={Link} to="/modernresort">Resort</Nav.Link>
-              <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-              <Nav.Link as={Link} to="/bookingpage">BookingPage</Nav.Link>
+              <Nav.Link as={Link} to="/" className="custom-nav-link">Home</Nav.Link>
+              <Nav.Link as={Link} to="/packages" className="custom-nav-link">Packages</Nav.Link>
+              <Nav.Link as={Link} to="/modernresort" className="custom-nav-link">Resort</Nav.Link>
+              <Nav.Link as={Link} to="/contact" className="custom-nav-link">Contact</Nav.Link>
+              <Nav.Link as={Link} to="/bookingpage" className="custom-nav-link">BookingPage</Nav.Link>
             </Nav>
-            <button type="button"  className="btn btn-outline-primary">
-              <Nav.Link as={Link} id="reg" to="/register">Register</Nav.Link>
+            <button type="button" className="btn btn-outline-primary custom-btn">
+              <Nav.Link as={Link} id="reg" to="/register" className="custom-btn-link">Register</Nav.Link>
             </button>
             &nbsp; &nbsp;
-            <button type="button" id="log" className="btn btn-outline-success">
-              <Nav.Link as={Link} to="/login">Login</Nav.Link>
+            <button type="button" id="log" className="btn btn-outline-success custom-btn">
+              <Nav.Link as={Link} to="/login" className="custom-btn-link">Login</Nav.Link>
             </button>
           </Navbar.Collapse>
         </Container>

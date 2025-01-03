@@ -1,66 +1,54 @@
-li{
-    display: inline;
-        list-style-type: none;
-        margin-left: 17%;
-        padding: 3.5px;
-        text-decoration: none;
-        border: 2px solid blue;
-        border-radius: 5px;
-        list-style: none;
-    }
-    a{
-        text-decoration: none;
-        color:black;
-        font-size: 23px;
-    }
-    
-    h1{
-        text-align: center;
-        margin-top: 3%;
-    }
-    /* Layout.css */
+/* Layout.css */
 
-/* Make navbar background transparent */
+/* Make navbar background transparent with a subtle blur */
 .navbar-custom {
-    backdrop-filter: blur(10px); /* Add blur effect */
-    transition: background-color 0.3s ease-in-out;
-    z-index: 1030; /* Ensure navbar stays above all elements */
+  backdrop-filter: blur(10px); /* Add blur effect */
+  background-color: rgba(255, 255, 255, 0.5); /* Light translucent background */
+  transition: background-color 0.3s ease-in-out;
+  z-index: 1030; /* Ensure navbar stays above all elements */
+}
+
+/* Add shadow to navbar */
+.navbar-custom.fixed-top {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for nav links */
+.navbar-custom .custom-nav-link {
+  color: blue !important;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar-custom .custom-nav-link:hover {
+  color: black !important;
+}
+
+/* Styling for buttons */
+.navbar-custom .custom-btn {
+  font-size: 0.9rem;
+  padding: 5px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-custom .custom-btn:hover {
+  background-color: blue;
+  border-color: black;
+}
+
+.navbar-custom .custom-btn .custom-btn-link {
+  color: black !important;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navbar-custom .custom-btn .custom-btn-link:hover {
+  color: white !important;
+}
+
+/* Responsiveness for small screens */
+@media (max-width: 576px) {
+  .navbar-custom {
+    padding: 0.5rem 1rem;
   }
-  
-  /* Optional: Add a shadow to the navbar */
-  .navbar-custom.fixed-top {
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Add hover effect for nav links */
-  .navbar-custom .nav-link {
-    color:blue !important; /* Default text color */
-    font-weight: 500;
-  }
-  
-  .navbar-custom .nav-link:hover {
-    color: black !important; /* Change to your preferred hover color */
-  }
-  
-  /* Make navbar buttons align properly */
-  .navbar-custom .btn {
-    font-size: 0.9rem;
-  }
-  
-  /* Ensure responsiveness for all screen sizes */
-  @media (max-width: 576px) {
-    .navbar-custom {
-      padding: 0.5rem 1rem;
-    }
-  }
-  
-  .navbar-custom #reg:hover {
-    .nav-link{
-      color:white;
-    }
-  }
-  .navbar-custom #log:hover {
-    .nav-link{
-      color:white;
-    }
-  }
+}

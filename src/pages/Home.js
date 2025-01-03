@@ -193,7 +193,7 @@ const Footer = () => {
 const Home =()=>{
     return(
         <div>
-    <h1 className="text-primary"> Home page </h1>
+    <h1 className="text-primary text-center"> Home page </h1>
     
     <Carousel data-bs-theme="dark">
       <Carousel.Item>
