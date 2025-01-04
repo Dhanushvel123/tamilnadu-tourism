@@ -234,7 +234,7 @@ const renderStars = (rating) => {
 const Packages = () => {
   return (
     <div className="container-fluid my-4">
-      <h1 className="text-center  text-primary mb-4">Tour Packages</h1>
+      <h1 className="text-center  text-primary mb-4"><svg xmlns="http://www.w3.org/2000/svg" height="42px" style={{verticalAlign:'top'}} viewBox="0 -960 960 960" width="42px" fill="#0d6efd"><path d="M160-80v-240h120v240H160Zm200 0v-476q-50 17-65 62.5T280-400h-80q0-128 75-204t205-76q100 0 150-49.5T680-880h80q0 88-37.5 157.5T600-624v544h-80v-240h-80v240h-80Zm120-640q-33 0-56.5-23.5T400-800q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800q0 33-23.5 56.5T480-720Z"/></svg>Tour Packages</h1>
       <div className="row row-cols-1 row-cols-md-3 g-4">
         {packages.map((pkg, index) => (
           <div className="col " key={index}>

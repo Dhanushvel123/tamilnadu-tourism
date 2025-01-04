@@ -77,7 +77,7 @@ const Blogs = () => {
       {/* Blog Cards Section */}
       <div className="blog-cards-section py-5">
         <div className="container-fluid">
-          <h2 className="text-center text-primary fw-bold mb-4">Explore Our Blogs</h2>
+          <h2 className="text-center text-primary fw-bold mb-4"><svg xmlns="http://www.w3.org/2000/svg" style={{verticalAlign:'top'}} height="40px" viewBox="0 -960 960 960" width="40px" fill="#0d6efd"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-180q45-45 80-93 30-41 55-90t25-97q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 48 25 97t55 90q35 48 80 93Zm0-220q-25 0-42.5-17.5T420-540q0-25 17.5-42.5T480-600q25 0 42.5 17.5T540-540q0 25-17.5 42.5T480-480Z"/></svg>Explore Our Blogs</h2>
           <div className="row g-4">
             {blogCategories.map((category, index) => (
               <div className="col-md-6 col-lg-4" key={index}>
@@ -193,7 +193,9 @@ const Footer = () => {
 const Home =()=>{
     return(
         <div>
-    <h1 className="text-primary text-center"> Home page </h1>
+    <h1 className="text-primary text-center"><svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" fill="currentColor" class="bi bi-globe-central-south-asia" viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M4.882 1.731a.48.48 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.7.7 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a1 1 0 0 0-.462-.04 7 7 0 0 1 2.45-2.027m-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.8.8 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.45.45 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282l.04-.001a7.003 7.003 0 0 1-12.658.905Z"/>
+</svg>Home  </h1>
     
     <Carousel data-bs-theme="dark">
       <Carousel.Item>

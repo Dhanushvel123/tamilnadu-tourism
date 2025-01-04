@@ -22,6 +22,9 @@
 
 .navbar-custom .custom-nav-link:hover {
   color: black !important;
+  #log{
+    background-color: green;
+  }
 }
 
 /* Styling for buttons */
@@ -34,6 +37,9 @@
 .navbar-custom .custom-btn:hover {
   background-color: blue;
   border-color: black;
+  #log{
+    background-color: green;
+  }
 }
 
 .navbar-custom .custom-btn .custom-btn-link {
@@ -52,3 +58,38 @@
     padding: 0.5rem 1rem;
   }
 }
+
+.icon:hover {
+  color: black;
+}
+   /* Basic styling for the anchor tag */
+   .custom-nav-link {
+    position: relative;
+    text-decoration: none;
+    color:blue;
+    font-weight: bold;
+  }
+  
+  /* Creating the underline using the ::after pseudo-element */
+  .custom-nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    color: blue;
+    background-color:black;
+    text-decoration-color: black;
+    text-decoration-line:line-through;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  /* On hover, the underline expands from left to right */
+  .custom-nav-link:hover::after {
+    width: 100%;
+    color:blue;
+  }
+  .custom-nav-link:hover{
+      color: black;
+  }
