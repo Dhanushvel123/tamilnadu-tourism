@@ -87,6 +87,12 @@ const RegisterPage = () => {
                     <button type="submit" className="btn btn-primary">
                       Register
                     </button>
+                    <p className="mb-0 text-center mt-3">
+                    Already have an account?{" "}
+                    <a href="/login" className="text-decoration-none">
+                      Login
+                    </a>
+                  </p>
                   </div>
                 </form>
               </div>
