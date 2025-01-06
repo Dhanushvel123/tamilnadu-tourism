@@ -9,7 +9,7 @@ const Layout = () => {
       {/* Navbar with fixed position and transparent background */}
       <Navbar bg="transparent" expand="lg" fixed="top" className="navbar-custom">
         <Container>
-          <Navbar.Brand href="/" style={{ color: 'blue', fontWeight: 'bold' }}>Tamil Nadu Tourism</Navbar.Brand>
+          <Navbar.Brand href="/" style={{ color: 'blue', fontWeight: 'bold' }}>Tamil Nadu <span className="text-dark">Tourism</span></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
