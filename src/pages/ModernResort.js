@@ -101,7 +101,7 @@ const ModernResort = () => {
       {/* Hero Section */}
       <div className="hero1-section d-flex align-items-center justify-content-center text-center text-light">
         <div className="container mt-5">
-          <h1 className="display-3 fw-bold">Discover Tamil Nadu Resorts</h1>
+          <h1 className="display-3 fw-bold text-primary " style={{textShadow:'white 2px 4px'}}>Discover <span style={{color:'black'}}> TamilNadu </span> Resorts</h1>
           <p className="lead">
             Unwind, Explore, and Savor at our luxurious Tamil Nadu resorts.
           </p>
