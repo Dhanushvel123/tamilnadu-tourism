@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tamilnadu-tourism/static/css/main.a3b4960a.css",
-    "main.js": "/tamilnadu-tourism/static/js/main.cfd024e4.js",
+    "main.css": "/tamilnadu-tourism/static/css/main.94430a72.css",
+    "main.js": "/tamilnadu-tourism/static/js/main.c7c1588f.js",
     "static/media/madurai.jpg": "/tamilnadu-tourism/static/media/madurai.15b14f5feea8c3a400a2.jpg",
     "static/media/vedanthangal.jpg": "/tamilnadu-tourism/static/media/vedanthangal.0412fa249e79377bddd7.jpg",
     "static/media/guide.jpg": "/tamilnadu-tourism/static/media/guide.d539ec848c21cc536c39.jpg",
@@ -32,11 +32,11 @@
     "static/media/boating.jpg": "/tamilnadu-tourism/static/media/boating.08b3e10e3f00d93fd50c.jpg",
     "static/media/ooty.jpeg": "/tamilnadu-tourism/static/media/ooty.f61db06c2a2a535a7caa.jpeg",
     "index.html": "/tamilnadu-tourism/index.html",
-    "main.a3b4960a.css.map": "/tamilnadu-tourism/static/css/main.a3b4960a.css.map",
-    "main.cfd024e4.js.map": "/tamilnadu-tourism/static/js/main.cfd024e4.js.map"
+    "main.94430a72.css.map": "/tamilnadu-tourism/static/css/main.94430a72.css.map",
+    "main.c7c1588f.js.map": "/tamilnadu-tourism/static/js/main.c7c1588f.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3b4960a.css",
-    "static/js/main.cfd024e4.js"
+    "static/css/main.94430a72.css",
+    "static/js/main.c7c1588f.js"
   ]
 }
