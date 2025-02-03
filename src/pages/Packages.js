@@ -257,8 +257,8 @@ const Packages = () => {
             </Card>
           </div>
         ))}
-              <Footer/>
       </div>
+      <Footer/>
     </div>
   );
 };
