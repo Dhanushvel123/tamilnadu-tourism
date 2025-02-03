@@ -256,8 +256,10 @@ const Packages = () => {
               </Card.Footer>
             </Card>
           </div>
+    
         ))}
       </div>
+      <br/>
       <Footer/>
     </div>
   );
