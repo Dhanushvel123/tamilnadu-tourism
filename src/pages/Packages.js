@@ -17,9 +17,9 @@ import d12 from './ReactImg/rameswaram.jpg';
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light pt-4 w-100 mt-5" style={{ minHeight: '400px' }}>
-        <div className="row">
+    <footer className="bg-dark text-light pt-4 w-100" style={{ minHeight: '400px' }}>
       <div className="container-fluid">
+        <div className="row">
           {/* About Section */}
           <div className="col-md-4 mb-3">
             <h5 className="text-warning">About Tamil Nadu Tourism</h5>
@@ -257,8 +257,8 @@ const Packages = () => {
             </Card>
           </div>
         ))}
+              <Footer/>
       </div>
-      <Footer/>
     </div>
   );
 };
