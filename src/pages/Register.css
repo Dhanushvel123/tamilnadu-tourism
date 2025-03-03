@@ -27,3 +27,10 @@ footer a:hover {
     margin-bottom: 1rem;
   }
 }
+#plog{
+  color: #0d6efd; 
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}

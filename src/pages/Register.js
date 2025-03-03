@@ -1,7 +1,94 @@
 import React, { useState } from "react";
 import "./Register.css";
+import { useNavigate } from "react-router-dom";
+
+const Footer = () => {
+  return (
+    <footer className="bg-dark text-light pt-4 w-100 " style={{ minHeight: '400px' }}>
+      <div className="container-fluid">
+        <div className="row">
+          {/* About Section */}
+          <div className="col-md-4 mb-3">
+            <h5 className="text-warning">About Tamil Nadu Tourism</h5>
+            <p style={{whiteSpace:'pre-line'}}>
+              Experience the rich culture, vibrant festivals, 
+              and breathtaking attractions that 
+              Tamil Nadu has to offer. Plan your visit today!
+            </p>
+          </div>
+
+          {/* Quick Links Section */}
+          <div className="col-md-4 mb-3" >
+            <h5 className="text-warning">Quick Links</h5>
+            <div>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/"
+              >
+                Home
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/packages"
+              >
+                Packages
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/modernResort"
+              >
+                Resort
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/contact"
+              >
+                Contact
+              </a>
+              <a
+                className="text-white d-block fs-6 py-1"
+                style={{ textDecoration: 'none', marginBottom: '8px' }}
+                href="/bookingpage"
+              >
+                Booking
+              </a>
+            </div>
+          </div>
+
+          {/* Contact Information Section */}
+          <div className="col-md-4 mb-3">
+            <h5 className="text-warning">Contact Us</h5>
+            <p>
+              <i className="bi bi-geo-alt-fill"></i> Chennai, Tamil Nadu, India
+            </p>
+            <p>
+              <i className="bi bi-telephone-fill"></i> +91 9876543210
+            </p>
+            <p>
+              <i className="bi bi-envelope-fill"></i> info@tamilnadutourism.com
+            </p>
+          </div>
+        </div>
+
+        {/* Footer Bottom Section */}
+        <div className="row text-center pt-3 border-top border-secondary">
+          <div className="col-12">
+            <p className="mb-0">
+              &copy; 2024 Tamil Nadu Tourism. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
 const RegisterPage = () => {
+  const navigate=useNavigate();
   const [credentials, setCredentials] = useState({
     name: "",
     email: "",
@@ -134,8 +221,7 @@ const RegisterPage = () => {
                   <div className="d-grid">
                     <button type="submit" className="btn btn-primary">Register</button>
                     <p className="mb-0 text-center mt-3">
-                      Already have an account?{" "}
-                      <a href="/login" className="text-decoration-none">Login</a>
+                      Already have an account?{" "}<p id="plog" onClick={() => navigate("/login")} >Login</p>
                     </p>
                   </div>
                 </form>
@@ -144,37 +230,7 @@ const RegisterPage = () => {
           </div>
         </div>
       </div>
-
-      {/* Footer Component */}
-      <footer className="bg-dark text-light pt-4">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-4 mb-3">
-              <h5 className="text-warning">About Tamil Nadu Tourism</h5>
-              <p>
-                Experience the rich culture, vibrant festivals, and breathtaking attractions
-                that Tamil Nadu has to offer. Plan your visit today!
-              </p>
-            </div>
-
-            <div className="col-md-4 mb-3">
-              <h5 className="text-warning">Quick Links</h5>
-              <a className="text-white d-block fs-6 py-1" href="/" style={{ textDecoration: "none" }}>Home</a>
-              <a className="text-white d-block fs-6 py-1" href="/about" style={{ textDecoration: "none" }}>About</a>
-              <a className="text-white d-block fs-6 py-1" href="/contact" style={{ textDecoration: "none" }}>Contact</a>
-            </div>
-
-            <div className="col-md-4 mb-3">
-              <h5 className="text-warning">Contact Us</h5>
-              <p>Email: support@tamilnadutourism.com</p>
-              <p>Phone: +91 98765 43210</p>
-            </div>
-          </div>
-        </div>
-        <div className="text-center py-3 bg-black">
-          &copy; 2024 Tamil Nadu Tourism. All Rights Reserved.
-        </div>
-      </footer>
+      <Footer />     
     </div>
   );
 };

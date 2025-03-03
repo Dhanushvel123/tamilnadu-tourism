@@ -2,6 +2,8 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useNavigate } from "react-router-dom"; 
+
 
 // Images for packages
 import d4 from './ReactImg/thanjavur.jpg';
@@ -232,6 +234,8 @@ const renderStars = (rating) => {
 
 // Packages component
 const Packages = () => {
+    const navigate = useNavigate();
+  
   return (
     <div className="container-fluid my-4">
       <h1 className="text-center  text-primary mb-4"  style={{textShadow:'black 0px 5px 5px'}}><svg xmlns="http://www.w3.org/2000/svg" height="42px" style={{verticalAlign:'top'}} viewBox="0 -960 960 960" width="42px" fill="#0d6efd"><path d="M160-80v-240h120v240H160Zm200 0v-476q-50 17-65 62.5T280-400h-80q0-128 75-204t205-76q100 0 150-49.5T680-880h80q0 88-37.5 157.5T600-624v544h-80v-240h-80v240h-80Zm120-640q-33 0-56.5-23.5T400-800q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800q0 33-23.5 56.5T480-720Z"/></svg>Tour <span style={{color:'black'}}> Packages</span></h1>
@@ -250,7 +254,7 @@ const Packages = () => {
                 </div>
               </Card.Body>
               <Card.Footer>
-                <Button variant="outline-primary" href='/bookingpage' className="w-100">
+                <Button variant="outline-primary" onClick={() => navigate("/bookingpage")} className="w-100">
                   Book Now
                 </Button>
               </Card.Footer>

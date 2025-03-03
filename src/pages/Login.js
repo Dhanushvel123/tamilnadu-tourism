@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Login.css";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -88,6 +89,7 @@ const Footer = () => {
 };
 
 const Login = () => {
+  const navigate=useNavigate();
   const [credentials, setCredentials] = useState({
     email: "",
     password: "",
@@ -177,14 +179,11 @@ const Login = () => {
                 <div className="text-center mt-3">
                   <p className="mb-0">
                     Don't have an account?{" "}
-                    <a href="/register" className="text-decoration-none">
-                      Register
-                    </a>
+                    <p id="rlog" onClick={() => navigate("/Register")} >Register</p>
                   </p>
-                  <p className="mb-0">
-                    <a href="/register" className="text-decoration-none">
-                      Forgot your password?
-                    </a>
+                  <p  className="mb-0">
+                    Forgot Password?{" "}   <p id="fpsd" onClick={() => navigate("/Register")} className="mt-0">Forgot Password</p>
+                
                   </p>
                 </div>
               </form>
