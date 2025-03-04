@@ -40,3 +40,8 @@ footer a:hover {
     margin-bottom: 1rem;
   }
 }
+
+.bkg{
+  border-radius: 25px;
+  font-size: 25px;
+}
