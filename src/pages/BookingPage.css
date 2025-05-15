@@ -1,69 +1,160 @@
+/* BookingPage.css */
 
-.booking-page .hero-section {
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url('/src/pages/ReactImg/blogo.jpg') center/cover no-repeat;
-  height: 600px;
+/* ======== Hero Section ======== */
+.hero-section {
+  position: relative;
+  height: 300px;
+  background-image: url('./ReactImg//blogo.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
-@media (max-width: 768px) {
-  .booking-page .hero-section {
-    height: 400px; /* Adjust height for smaller screens */
-  }
-
-  .booking-page .hero-section h1 {
-    font-size: 2rem;
-  }
-
-  .booking-page .hero-section p {
-    font-size: 1rem;
-  }
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 40px;
+  border-radius: 8px;
 }
 
-
+/* ======== Booking Form Section ======== */
 .booking-form-section {
-  background-color: #f9f9f9;
+  padding: 40px 15px;
 }
 
-.booking-form-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.booking-form-section form {
+/* Form container */
+form.bg-light {
+  background-color: #f8f9fa !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
 
-.booking-form-section .form-check {
-  margin-bottom: 10px;
+/* Form Labels */
+.form-label {
+  font-weight: 600;
+  color: #333;
 }
 
-@media (max-width: 576px) {
-  .booking-page .hero-section {
-    height: 40vh;
-  }
+/* Inputs */
+input.form-control {
+  border: 1.5px solid #ced4da;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
 }
 
+input.form-control:focus {
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+}
 
-footer a {
+input.form-control:required:valid {
+  background-color: #e9ecef;
+  border: 1.5px solid #198754;
+}
+/* Valid input */
+input.form-control:valid {
+  border-color: #198754; /* bootstrap success green */
+  box-shadow: 0 0 5px rgba(25, 135, 84, 0.5);
+}
+
+/* Invalid input */
+input.form-control:invalid {
+  border-color: #dc3545; /* bootstrap danger red */
+  box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+}
+
+/* Error messages */
+.text-danger {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Checkboxes */
+.form-check-label {
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-check-input {
+  cursor: pointer;
+}
+
+/* Submit Button */
+button.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 12px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* Status message styling */
+.alert {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* ======== Footer Styling ======== */
+footer.bg-dark {
+  background-color: #212529 !important;
+  color: #f8f9fa !important;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  margin-top: 40px;
+}
+
+footer h5.text-warning {
+  color: #ffc107 !important;
+  margin-bottom: 1rem;
+}
+
+footer a.text-white {
+  color: #f8f9fa !important;
   transition: color 0.3s ease;
 }
 
-footer a:hover {
-  color: #f4d03f; /* Hover color for links */
+footer a.text-white:hover {
+  color: #ffc107 !important;
+  text-decoration: underline;
 }
 
-@media (max-width: 576px) {
-  footer {
-    text-align: center;
-  }
+footer p {
+  font-size: 0.9rem;
+}
 
-  footer .row > div {
-    margin-bottom: 1rem;
+.border-top {
+  border-top: 1px solid #6c757d !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .hero-section {
+    height: 220px;
+    padding: 10px;
   }
+  .hero-content {
+    padding: 20px;
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }

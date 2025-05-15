@@ -23,7 +23,7 @@ export default function App() {
           <Route path="bookingpage" element={<BookingPage />} />
            </Route>
       </Routes>
-    </HashRouter>
+    </HashRouter>  
   );
 }
 const trip =ReactDOM.createRoot(document.getElementById("root"))
