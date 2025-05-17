@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tamilnadu-tourism/static/css/main.50cd017c.css",
-    "main.js": "/tamilnadu-tourism/static/js/main.87bf1f80.js",
+    "main.js": "/tamilnadu-tourism/static/js/main.35214c5d.js",
     "static/media/madurai.jpg": "/tamilnadu-tourism/static/media/madurai.15b14f5feea8c3a400a2.jpg",
     "static/media/vedanthangal.jpg": "/tamilnadu-tourism/static/media/vedanthangal.0412fa249e79377bddd7.jpg",
     "static/media/guide.jpg": "/tamilnadu-tourism/static/media/guide.d539ec848c21cc536c39.jpg",
@@ -33,10 +33,10 @@
     "static/media/ooty.jpeg": "/tamilnadu-tourism/static/media/ooty.f61db06c2a2a535a7caa.jpeg",
     "index.html": "/tamilnadu-tourism/index.html",
     "main.50cd017c.css.map": "/tamilnadu-tourism/static/css/main.50cd017c.css.map",
-    "main.87bf1f80.js.map": "/tamilnadu-tourism/static/js/main.87bf1f80.js.map"
+    "main.35214c5d.js.map": "/tamilnadu-tourism/static/js/main.35214c5d.js.map"
   },
   "entrypoints": [
     "static/css/main.50cd017c.css",
-    "static/js/main.87bf1f80.js"
+    "static/js/main.35214c5d.js"
   ]
 }
