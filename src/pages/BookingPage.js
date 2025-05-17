@@ -105,8 +105,8 @@ const BookingPage = () => {
     const totalCost = calculateTotalCost();
 
     formRef.current.totalcost.value = totalCost;
-    formRef.current.locations.value = formData.locations.length > 0 ? formData.locations.join(", ") : "None";
-    formRef.current.packages.value = formData.packages.length > 0 ? formData.packages.join(", ") : "None";
+    formRef.current.locations.value = formData.locations.length > 0 ? formData.locations.join(" ") : "None";
+    formRef.current.packages.value = formData.packages.length > 0 ? formData.packages.join(" ") : "None";
 
     emailjs.sendForm(
       "service_h80b8vk",
